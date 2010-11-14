@@ -25,7 +25,7 @@
         $this->dom->load($v);
         $this->feedValue[] = array();
         foreach ($this->dom->getElementsByTagName("entry") as $DOMNode)
-          {
+        {
           $innerNodes = $DOMNode->childNodes;
           if(!empty($innerNodes))
           {
@@ -36,10 +36,8 @@
           }
         }
       }
-      print_r($this->feedValue);
+      return $this->feedValue;
     }
   }
 
-  $s = new RssParser(array("http://www.plurk.com/EragonJ.xml","http://www.plurk.com/buweichiu.xml"));
-  $s->exec();
 ?>
