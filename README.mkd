@@ -294,9 +294,11 @@ toArray()
 toHTML()
 
   original 
+
   ![img](http://images.plurk.com/3626549_f1643fa4e0d012e180f1d0941f4ce119.jpg)
 
   in wordpress widget
+
   ![img](http://images.plurk.com/3626549_907ea0819465481d4da08dee3de7ccb7.jpg)
 
 Usage
