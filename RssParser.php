@@ -19,7 +19,7 @@
     {
       date_default_timezone_set("Asia/Taipei");
       $this->feedList = is_array($filename) ? $filename : array($filename);
-      $this->cacheFile = __DIR__."/feed.cache";
+      $this->cacheFile = dirname(__FILE__)."/feed.cache";
       return $this;
     }
 
