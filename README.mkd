@@ -27,6 +27,11 @@ toArray()
   )
 
 toHTML()
+  
+  ...
+
+Snapshot
+========
 
   Original 
 
@@ -35,6 +40,11 @@ toHTML()
   In wordpress widget
 
   ![img](http://images.plurk.com/3626549_907ea0819465481d4da08dee3de7ccb7.jpg)
+
+Online Demo
+===========
+
+  [See it](http://eragonj.hax4.in/toys/PlurkRssParser/demo.php)
 
 Usage
 =====
