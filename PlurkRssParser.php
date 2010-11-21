@@ -1,5 +1,5 @@
 <?php
-  class RssParser
+  class PlurkRssParser
   {
 
     protected $dom; 

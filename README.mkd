@@ -1,7 +1,8 @@
 Introduction
 ============
 
-It's a small RssParser used in Plurk.com/username.xml
+It's a small PlurkRssParser used for Plurk.com/username.xml.
+You can compose your friends news in plurk all together as a widget in wordpress or anywhere as you wish.
 
 Result
 ======
@@ -23,281 +24,15 @@ toArray()
               [1] => 2010-11-13T18:05:24Z
               [2] => /p/8w9hxh
           )
-
-      [2] => Array
-          (
-              [0] => EragonJ 今天的 YAPC::Tiny-&gt;third 真的很有趣 見到好多人
-              [1] => 2010-11-13T15:34:53Z
-              [2] => /p/8w5z6v
-          )
-
-      [3] => Array
-          (
-              [0] => EragonJ 衝了 法克
-              [1] => 2010-11-13T09:18:52Z
-              [2] => /p/8vx8td
-          )
-
-      [4] => Array
-          (
-              [0] => EragonJ 超囧XD
-              [1] => 2010-11-13T06:44:28Z
-              [2] => /p/8vubvx
-          )
-
-      [5] => Array
-          (
-              [0] => EragonJ just got 果子咖啡
-              [1] => 2010-11-13T05:55:32Z
-              [2] => /p/8vtd7e
-          )
-
-      [6] => Array
-          (
-              [0] => EragonJ 雨好大 fuck
-              [1] => 2010-11-13T03:46:33Z
-              [2] => /p/8vqqbu
-          )
-
-      [7] => Array
-          (
-              [0] => EragonJ 有人把validator寫在javascript內的嗎… 我是指帳號密碼 QQ
-              [1] => 2010-11-12T16:45:27Z
-              [2] => /p/8vimiy
-          )
-
-      [8] => Array
-          (
-              [0] => EragonJ 明天要去 YAPC::tiny-&gt;third 是不是要做個什麼自介還是小東西呀？
-              [1] => 2010-11-12T13:02:26Z
-              [2] => /p/8var83
-          )
-
-      [9] => Array
-          (
-              [0] => EragonJ ([rep])shia84 : [活動] 第三次Perl小聚 ，明天(11/13)下午兩點果子咖啡，記得帶著你的名片、家裏的O’Reilly Perl課本，和一顆輕鬆愉快的心，一起來參加吧！(請協助轉噗)
-              [1] => 2010-11-12T12:45:49Z
-              [2] => /p/8vaaxm
-          )
-
-      [10] => Array
-          (
-              [0] => EragonJ lol
-              [1] => 2010-11-12T12:18:18Z
-              [2] => /p/8v9l8m
-          )
-
-      [11] => Array
-          (
-              [0] => EragonJ 慘 都忘了要做什麼事
-              [1] => 2010-11-11T15:08:50Z
-              [2] => /p/8um4sj
-          )
-
-      [12] => Array
-          (
-              [0] => EragonJ 突然有一個好點子 GOOOD
-              [1] => 2010-11-10T18:03:52Z
-              [2] => /p/8txwn2
-          )
-
-      [13] => Array
-          (
-              [0] => EragonJ 太好笑了，我們寢室因為太吵被檢舉了 xD
-              [1] => 2010-11-10T16:34:02Z
-              [2] => /p/8tvqvo
-          )
-
-      [14] => Array
-          (
-              [0] => EragonJ 我每次一回到台北就一直打噴嚏… 屢試不爽 QQ 快感冒了
-              [1] => 2010-11-10T15:13:52Z
-              [2] => /p/8tsp53
-          )
-
-      [15] => Array
-          (
-              [0] => EragonJ 回到基地了，整個戰力上升200%
-              [1] => 2010-11-10T10:01:31Z
-              [2] => /p/8tiowa
-          )
-
-      [16] => Array
-          (
-              [0] => EragonJ 準備報告去
-              [1] => 2010-11-10T00:45:46Z
-              [2] => /p/8t7gf7
-          )
-
-      [17] => Array
-          (
-              [0] => EragonJ md5Collision
-              [1] => 2010-11-09T16:04:15Z
-              [2] => /p/8t0ivg
-          )
-
-      [18] => Array
-          (
-              [0] => EragonJ 資安報告，怕梗難笑
-              [1] => 2010-11-09T14:16:19Z
-              [2] => /p/8svzln
-          )
-
-      [19] => Array
-          (
-              [0] => EragonJ 來去上課了
-              [1] => 2010-11-09T05:55:19Z
-              [2] => /p/8sj0wy
-          )
-
-      [20] => Array
-          (
-              [0] => buweichiu 嘿 我要走了 昨天的對白 已不在重要／我已見過最美的一幕 只是在此刻 都要結束
-              [1] => 2010-11-14T02:01:27Z
-              [2] => /p/8we3pj
-          )
-
-      [21] => Array
-          (
-              [0] => buweichiu 早安
-              [1] => 2010-11-14T01:44:34Z
-              [2] => /p/8wdtcs
-          )
-
-      [22] => Array
-          (
-              [0] => buweichiu 分享 Bad memory for faces? Blame your reading skills (New Scuentist)
-              [1] => 2010-11-13T14:27:33Z
-              [2] => /p/8w3x8d
-          )
-
-      [23] => Array
-          (
-              [0] => buweichiu 已經報名了下星期的 Ubuntu Release Party
-              [1] => 2010-11-13T14:06:26Z
-              [2] => /p/8w3c87
-          )
-
-      [24] => Array
-          (
-              [0] => buweichiu 我的快樂.....
-              [1] => 2010-11-13T12:28:54Z
-              [2] => /p/8w0y4m
-          )
-
-      [25] => Array
-          (
-              [0] => buweichiu 今天的 YAPC::tiny-&gt;third 真有趣 好期待下個月的 YAPC::tiny-&gt;fourth
-              [1] => 2010-11-13T10:40:32Z
-              [2] => /p/8vyqwb
-          )
-
-      [26] => Array
-          (
-              [0] => buweichiu 最近發現自已認識好多成功高中的朋友／同事
-              [1] => 2010-11-13T02:44:11Z
-              [2] => /p/8vpjl1
-          )
-
-      [27] => Array
-          (
-              [0] => buweichiu 唱高音時 身體更要放鬆
-              [1] => 2010-11-13T01:30:46Z
-              [2] => /p/8vocgc
-          )
-
-      [28] => Array
-          (
-              [0] => buweichiu
-              [1] => 2010-11-13T01:27:10Z
-              [2] => /p/8voaec
-          )
-
-      [29] => Array
-          (
-              [0] => buweichiu 早安 還是很想唱歌 orz
-              [1] => 2010-11-13T01:06:32Z
-              [2] => /p/8vnywj
-          )
-
-      [30] => Array
-          (
-              [0] => buweichiu 當認識的人愈來愈多，你會發現人與人的連結原來這麼奇妙
-              [1] => 2010-11-12T16:52:54Z
-              [2] => /p/8viu3p
-          )
-
-      [31] => Array
-          (
-              [0] => buweichiu 心情很不好，但說不出為什麼。
-              [1] => 2010-11-12T16:17:17Z
-              [2] => /p/8vhq29
-          )
-
-      [32] => Array
-          (
-              [0] => buweichiu
-              [1] => 2010-11-12T15:07:20Z
-              [2] => /p/8veyzd
-          )
-
-      [33] => Array
-          (
-              [0] => buweichiu 又想唱歌了
-              [1] => 2010-11-12T14:00:41Z
-              [2] => /p/8vcmmy
-          )
-
-      [34] => Array
-          (
-              [0] => buweichiu 承糟糕之噗，行正直之能事
-              [1] => 2010-11-12T08:23:07Z
-              [2] => /p/8v471g
-          )
-
-      [35] => Array
-          (
-              [0] => buweichiu
-              [1] => 2010-11-12T04:08:30Z
-              [2] => /p/8uz4si
-          )
-
-      [36] => Array
-          (
-              [0] => buweichiu 分享 Smarty 3.0 Released!
-              [1] => 2010-11-12T03:34:13Z
-              [2] => /p/8uyfiq
-          )
-
-      [37] => Array
-          (
-              [0] => buweichiu 分享 新品種蜥蜴 雌性自體繁殖…越南盤中飧 | 聯合新聞網
-              [1] => 2010-11-12T03:33:45Z
-              [2] => /p/8uyf4n
-          )
-
-      [38] => Array
-          (
-              [0] => buweichiu 早上就是要來唱這個 (大誤!&quot;
-              [1] => 2010-11-12T00:47:32Z
-              [2] => /p/8uv594
-          )
-
-      [39] => Array
-          (
-              [0] => buweichiu 期待明天的「第三次 Perl 聚會YAPC::tiny-&gt;third」
-              [1] => 2010-11-12T00:43:35Z
-              [2] => /p/8uv2oa
-          )
   )
 
 toHTML()
 
-  original 
+  Original 
 
   ![img](http://images.plurk.com/3626549_f1643fa4e0d012e180f1d0941f4ce119.jpg)
 
-  in wordpress widget
+  In wordpress widget
 
   ![img](http://images.plurk.com/3626549_907ea0819465481d4da08dee3de7ccb7.jpg)
 
@@ -305,10 +40,10 @@ Usage
 =====
 
     <?php
-      include_once("RssParser.php");
+      include_once("PlurkRssParser.php");
 
       $plurkUsers = array("http://www.plurk.com/EragonJ.xml","http://www.plurk.com/buweichiu.xml","http://www.plurk.com/BlackACE.xml");
-      $rss = new RssParser($plurkUsers);
+      $rss = new PlurkRssParser($plurkUsers);
       print_r($rss->exec()->sortSeeds()->toHTML());
     ?>
 
