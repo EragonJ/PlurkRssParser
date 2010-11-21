@@ -8,6 +8,8 @@
 
     protected $feedValue = array();
 
+    protected $cacheFile;
+
     /*
      * mixed 
      */
@@ -17,31 +19,36 @@
     {
       date_default_timezone_set("Asia/Taipei");
       $this->feedList = is_array($filename) ? $filename : array($filename);
+      $this->cacheFile = __DIR__."/feed.cache";
       return $this;
     }
 
     public function exec()
     {
-      foreach($this->feedList as $k => $v)
+      if(!$this->cacheCheck())
       {
-        $this->dom = new DOMDocument();
-        $this->dom->load($v);
-        foreach ($this->dom->getElementsByTagName("entry") as $DOMNode)
+        foreach($this->feedList as $k => $v)
         {
-          $innerNodes = $DOMNode->childNodes;
-          if(!empty($innerNodes))
+          $this->dom = new DOMDocument();
+          $this->dom->load($v);
+          foreach ($this->dom->getElementsByTagName("entry") as $DOMNode)
           {
-            $allContent = $innerNodes->item(13)->nodeValue;
-            preg_match("/(.*?) (.*)/",$allContent,$allContent);
+            $innerNodes = $DOMNode->childNodes;
+            if(!empty($innerNodes))
+            {
+              $allContent = $innerNodes->item(13)->nodeValue;
+              preg_match("/(.*?) (.*)/",$allContent,$allContent);
 
-            $published = $innerNodes->item(7)->nodeValue;
-            $link = $innerNodes->item(9)->attributes->item(0)->nodeValue;
-            $nick = $allContent[1];
-            $content = $allContent[2];
+              $published = $innerNodes->item(7)->nodeValue;
+              $link = $innerNodes->item(9)->attributes->item(0)->nodeValue;
+              $nick = $allContent[1];
+              $content = $allContent[2];
 
-            $this->feedValue[] = array($nick,$content,$published,$link);
+              $this->feedValue[] = array($nick,$content,$published,$link);
+            }
           }
         }
+        $this->cacheStore();
       }
       return $this;
     }
@@ -94,6 +101,24 @@
     public function toArray()
     {
       return $this->feedValue;
+    }
+
+    private function cacheCheck($duration = 600)
+    {
+      if(file_exists($this->cacheFile))
+      {
+        if((time() - filemtime($this->cacheFile)) < $duration)
+        {
+          $this->feedValue = unserialize(file_get_contents($this->cacheFile));
+          return true;
+        }
+      }
+      return false;
+    }
+
+    private function cacheStore()
+    {
+      file_put_contents($this->cacheFile,serialize($this->feedValue));
     }
   }
 ?>
